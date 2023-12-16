@@ -1,15 +1,18 @@
 import React from "react";
-import { Dashboard } from "./pages";
+import { Dashboard, Exchange, Wallet } from "./pages";
 import { Route, Routes } from "react-router-dom";
 import { SideNav } from "./Layout";
 function App() {
 	return (
-		<div className="bg-primary">
+		<div className="bg-primary flex">
 			<SideNav />
-			<Routes>
-				<Route path="/dashboard" element={<Dashboard />} />
-				{/* <Route path="/books" element={<BookList />} /> */}
-			</Routes>
+			<div className="w-full">
+				<Routes>
+					<Route path="/dashboard" element={<Dashboard />} />
+					<Route path="/exchange" element={<Exchange />} />
+					<Route path="/wallet" element={<Wallet />} />
+				</Routes>
+			</div>
 		</div>
 	);
 }

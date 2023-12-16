@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Header } from "../Layout";
+import { useDocumentTitleWithRouter } from "../hooks";
+
 
 export const Wallet = () => {
-  return (
-    <div>Wallet</div>
-  )
-}
+	useDocumentTitleWithRouter();
+	return (
+		<div>
+			<Header />
+		</div>
+	);
+};

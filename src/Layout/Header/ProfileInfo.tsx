@@ -6,7 +6,6 @@ export const ProfileInfo = () => {
 		<div>
 			<div className="flex items-center space-x-3  justify-end">
 				<div className="">
-					{/* <img src={ notification } alt="User avatar" className="md:w-6 md:h-6" /> */}
 					<Notification />
 				</div>
 				<div className="flex items-center space-x-2">
@@ -15,12 +14,9 @@ export const ProfileInfo = () => {
 					</div>
 					<div className="">
 						<Avatar />
-						{/* <img src={avatar} alt="User avatar" className="md:w-9 md:h-9" /> */}
 					</div>
 				</div>
 			</div>
-			<div></div>
-			<div></div>
 		</div>
 	);
 };

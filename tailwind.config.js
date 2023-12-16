@@ -3,7 +3,8 @@ module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
 		extend: {
-			backgroundColor: { primary: "#F3F5FE" },
+			colors: { primary: "#031C418F", secondary: "#031C41", light: "#fff" },
+			backgroundColor: { primary: "#F3F5FE", secondary: "#031C41" },
 			fontFamily: {
 				inter: ["Inter", "sans-serif"],
 			},

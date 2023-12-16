@@ -5,7 +5,7 @@ export const RouteName = () => {
 	const { pathName } = useRoutePathname();
 
 	return (
-		<h1 className="font-bold text-sm  md:text-lg text-[#04103D70] capitalize">
+		<h1 className="font-bold text-sm  md:text-lg text-primary capitalize">
 			{pathName}
 		</h1>
 	);

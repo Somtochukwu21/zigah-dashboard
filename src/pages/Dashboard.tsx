@@ -1,10 +1,19 @@
-import React from 'react'
-import { Header } from '../Layout';
-import { useDocumentTitleWithRouter } from '../hooks/useDocumentTitleWithRouter';
+import React from "react";
+import { Header } from "../Layout";
+import { useDocumentTitleWithRouter } from "../hooks";
+import { Card, FundsHub } from "../global";
+import { TransactionPanel } from "../components";
 
 export const Dashboard = () => {
-  useDocumentTitleWithRouter()
-  return (
-    <div><Header /></div>
-  )
-}
+	useDocumentTitleWithRouter();
+	return (
+		<div className="relative">
+			<Header />
+
+			<Card>
+				<FundsHub />
+				<TransactionPanel />
+			</Card>
+		</div>
+	);
+};

@@ -9,3 +9,11 @@
 		@apply font-inter;
 	}
 }
+
+.active {
+	@apply bg-[#000A4A1F] text-secondary;
+}
+
+.navLink:not(.active) {
+	@apply hover:bg-[#000A4A1F];
+}
