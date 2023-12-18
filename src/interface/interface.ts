@@ -22,3 +22,16 @@ export interface DummyData {
 	time: string;
 	image: string;
 }
+
+export interface SearchBarProps {
+	handleSearchInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+	searchInput: string;
+}
+
+export interface DataInterface {
+	data: DummyData[];
+}
+
+export interface ActiveAndData extends DataInterface {
+	activeTab: string;
+}

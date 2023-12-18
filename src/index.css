@@ -10,10 +10,15 @@
 	}
 }
 
-.active {
-	@apply bg-[#000A4A1F] text-secondary;
-}
+@layer components {
+	.navLink.active {
+		@apply bg-[#000A4A1F] text-secondary;
+	}
+	.navLink:not(.active) {
+		@apply hover:bg-[#000A4A1F];
+	}
 
-.navLink:not(.active) {
-	@apply hover:bg-[#000A4A1F];
+	.no-scroll::-webkit-scrollbar {
+		@apply hidden;
+	}
 }
