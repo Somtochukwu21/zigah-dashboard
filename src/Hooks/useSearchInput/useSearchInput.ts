@@ -14,6 +14,5 @@ export const useSearchInput = (data: DummyData[]) => {
 		data.name.toLowerCase().includes(searchInput.toLowerCase())
 	);
 
-	console.log(filteredData)
 	return { handleSearchInputChange, searchInput, filteredData };
 };

@@ -14,7 +14,7 @@ export const SearchBar = ({
 				<input
 					type="search"
 					placeholder="Search Transactions"
-					className="w-full rounded bg-transparent border-b-[#ebebeb] p-2 outline-none "
+					className="w-full rounded bg-transparent border-b-[#ebebeb] p-2 outline-none text-xs lg:text-base"
 					value={searchInput}
 					onChange={handleSearchInputChange}
 				/>

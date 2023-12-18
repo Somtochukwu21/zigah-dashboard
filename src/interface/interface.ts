@@ -2,7 +2,9 @@ import { ReactNode } from "react";
 
 export interface ButtonProp {
 	caption: string;
-	element: ReactNode;
+	className: string;
+	element?: ReactNode;
+	onClick?: () => void;
 }
 
 export interface TabProps {

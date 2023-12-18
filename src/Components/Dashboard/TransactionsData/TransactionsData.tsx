@@ -4,12 +4,10 @@ import { AllTransactions } from "./AllTransactions";
 import { FilteredTransactions } from "./FilteredTransactions";
 
 export const TransactionData = ({ data, activeTab }: ActiveAndData) => {
-	const users = data;
-
 	return (
 		<Fragment>
-			{users.map((data, index) =>
-				activeTab === "all transactions" ? (
+			{activeTab === "all transactions" ? (
+				data.map((data, index) => (
 					<AllTransactions
 						key={index}
 						amount={data.amount}
@@ -18,13 +16,9 @@ export const TransactionData = ({ data, activeTab }: ActiveAndData) => {
 						status={data.status}
 						time={data.time}
 					/>
-				) : (
-					<FilteredTransactions
-						activeTab={activeTab}
-						data={users}
-						key={index}
-					/>
-				)
+				))
+			) : (
+				<FilteredTransactions activeTab={activeTab} data={data} />
 			)}
 		</Fragment>
 	);

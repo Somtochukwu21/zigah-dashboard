@@ -3,6 +3,8 @@ import { useState } from "react";
 import { TabButtons } from "../ActionTabs/TabButtons";
 import { TransactionHistoryFeed } from "../TransactionHistoryFeed";
 import { dummyData } from "../../../API";
+import { Button } from "../../Global";
+import { useSeeMore } from "../../../Hooks";
 
 export const TransactionAndTabs: React.FC<TabsProps> = ({ tabs }) => {
 	const [activeTab, setActiveTab] = useState<number>(0);
@@ -10,6 +12,8 @@ export const TransactionAndTabs: React.FC<TabsProps> = ({ tabs }) => {
 	const handleTabClick = (index: number) => {
 		setActiveTab(index);
 	};
+
+	const { shortenedData, showMore } = useSeeMore(dummyData);
 
 	return (
 		<div>
@@ -28,11 +32,18 @@ export const TransactionAndTabs: React.FC<TabsProps> = ({ tabs }) => {
 				{tabs[activeTab] && (
 					<div>
 						<TransactionHistoryFeed
-							data={dummyData}
+							data={shortenedData}
 							activeTab={tabs[activeTab].label}
 						/>
 					</div>
 				)}
+			</div>
+			<div className="flex justify-center py-8">
+				<Button
+					caption="More transactions"
+					className="bg-primary text-secondary shadow"
+					onClick={showMore}
+				/>
 			</div>
 		</div>
 	);

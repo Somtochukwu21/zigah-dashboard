@@ -11,4 +11,3 @@ export const PageContent = () => {
 	);
 };
 
-//Try look at the py-10 if i have problem with the button

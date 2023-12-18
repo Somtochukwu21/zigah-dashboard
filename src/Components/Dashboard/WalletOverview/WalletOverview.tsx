@@ -7,7 +7,7 @@ import { Button } from "../../Global";
 export const WalletOverview = () => {
 	return (
 		<div>
-			<h2 className="text-secondary text-sm font-semibold tracking-normal">
+			<h2 className="text-secondary lg:text-sm font-semibold tracking-normal text-[11px]">
 				Wallet Balance
 			</h2>
 			<div className="flex space-x-1 mt-2 mb-3">
@@ -18,8 +18,8 @@ export const WalletOverview = () => {
 				</div>
 			</div>
 			<div className="flex space-x-2">
-				<Button caption="fund account" element={<Add />} />
-				<Button caption="send money" element={<Send />} />
+				<Button caption="fund account" element={<Add />} className="bg-secondary"/>
+				<Button caption="send money" element={<Send />}  className="bg-secondary"/>
 			</div>
 		</div>
 	);
