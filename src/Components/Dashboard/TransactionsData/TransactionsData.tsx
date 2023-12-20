@@ -2,12 +2,22 @@ import React, { Fragment } from "react";
 import { ActiveAndData } from "../../../interface";
 import { AllTransactions } from "./AllTransactions";
 import { FilteredTransactions } from "./FilteredTransactions";
+import { useSeeMore } from "../../../Hooks";
+import { Button } from "../../Global";
 
 export const TransactionData = ({ data, activeTab }: ActiveAndData) => {
+	const { showMore, shortenData, shortenFilteredData } = useSeeMore(
+		data,
+		activeTab
+	);
+
+	// useEffect(() => {
+	// }, [data]);
+
 	return (
 		<Fragment>
 			{activeTab === "all transactions" ? (
-				data.map((data, index) => (
+				shortenData.map((data, index) => (
 					<AllTransactions
 						key={index}
 						amount={data.amount}
@@ -18,8 +28,19 @@ export const TransactionData = ({ data, activeTab }: ActiveAndData) => {
 					/>
 				))
 			) : (
-				<FilteredTransactions activeTab={activeTab} data={data} />
+				<FilteredTransactions
+					activeTab={activeTab}
+					data={shortenFilteredData}
+				/>
 			)}
+
+			<div className="flex justify-center py-8">
+				<Button
+					caption="More transactions"
+					className="bg-primary text-secondary shadow"
+					onClick={showMore}
+				/>
+			</div>
 		</Fragment>
 	);
 };

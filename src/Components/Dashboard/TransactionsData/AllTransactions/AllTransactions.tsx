@@ -13,9 +13,8 @@ export const AllTransactions = ({
 	const red = status.toLocaleLowerCase() === "completed" && "text-red-600";
 	const slate = status.toLocaleLowerCase() === "pending" && "text-secondary";
 
-	console.log(green, red);
 	return (
-		<div className="flex items-center border-b py-4 space-x-4 drop-shadosw-xl">
+		<div className="flex items-center border-b py-4 space-x-4">
 			<div>
 				<img src={image} alt="" />
 			</div>
@@ -31,7 +30,9 @@ export const AllTransactions = ({
 					</div>
 				</div>
 				<div>
-					<p className={`${green} ${slate} font-semibold	${red} text-sm`}>{amount}</p>
+					<p className={`${green} ${slate} font-semibold	${red} text-sm`}>
+						{amount}
+					</p>
 				</div>
 			</div>
 		</div>

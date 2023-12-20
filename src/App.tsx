@@ -3,9 +3,9 @@ import { Header, PageContent, SideBar } from "./Components";
 
 function App() {
 	return (
-		<div className="bg-primary flex flex-col h-screen">
+		<div className="bg-primary flex flex-col lg:h-screen">
 			<Header />
-			<div className="flex flex-1 justify-start items-start overflow-auto">
+			<div className="flex h-full	w-full flex-1 justify-start items-start overflow-auto">
 				<SideBar />
 				<PageContent />
 			</div>

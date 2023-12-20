@@ -12,7 +12,7 @@ export const MobileSideNav = () => {
 		<div className="block lg:hidden">
 			{!open && (
 				<div
-					className="fixed left-0 top-0  h-full w-full bg-[#00000080]"
+					className="fixed left-0 top-0 h-full w-full bg-[#00000080]"
 					onKeyDown={toggleSideBar}
 					onClick={toggleSideBar}
 				/>
