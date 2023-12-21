@@ -37,3 +37,7 @@ export interface DataInterface {
 export interface ActiveAndData extends DataInterface {
 	activeTab: string;
 }
+
+export interface CardProp {
+	children: ReactNode;
+}

@@ -1,14 +1,24 @@
 import React from "react";
-import { Header, PageContent, SideBar } from "./Components";
+import { AppRoutes } from "./Components";
+import { useTitle } from "./Hooks";
+import { SignIn } from "./Pages";
 
 function App() {
+	useTitle();
+
 	return (
-		<div className="bg-primary flex flex-col lg:h-screen">
-			<Header />
-			<div className="flex h-full	w-full flex-1 justify-start items-start overflow-auto">
-				<SideBar />
-				<PageContent />
-			</div>
+		<div className="bg-primary lg:h-screen">
+			<SignIn />
+			<AppRoutes />
+			{/* <Routes>
+				<Route element={<ProtectedRoutes />}>
+					<Route path="/" element={<Dashboard />}></Route>
+					<Route path="users" element={<Users />}></Route>
+					<Route path="createbet" element={<CreateBet />}></Route>
+					<Route path="viewbets" element={<ViewBets />}></Route>
+				</Route>
+				<Route path="/signin" element={<SignIn />} />
+			</Routes> */}
 		</div>
 	);
 }
