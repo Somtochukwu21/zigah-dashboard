@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export interface ButtonProp {
 	caption: string;
-	className: string;
+	className?: string;
 	element?: ReactNode;
 	onClick?: () => void;
 }
@@ -11,6 +11,11 @@ export interface TabProps {
 	label: string;
 	isActive: boolean;
 	onClick: () => void;
+}
+
+export interface FormTextHeaderProps {
+	paragraph: string;
+	header: string;
 }
 
 export interface TabsProps {

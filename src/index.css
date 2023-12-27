@@ -11,6 +11,14 @@
 	body {
 		@apply font-inter;
 	}
+
+	label {
+		@apply capitalize text-lg font-medium;
+	}
+
+	input[type="checkbox"] {
+		@apply h-6;
+	}
 }
 
 @layer components {
