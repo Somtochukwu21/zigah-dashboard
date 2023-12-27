@@ -46,3 +46,11 @@ export interface ActiveAndData extends DataInterface {
 export interface CardProp {
 	children: ReactNode;
 }
+
+export interface FormValues {
+	email: string;
+	firstName: string;
+	lastName: string;
+	phoneNumber: number;
+	accept: HTMLInputElement;
+}
