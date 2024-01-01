@@ -1,5 +1,5 @@
 import React from "react";
-import { SignInForm } from "../../Components";
+// import { SignInAndCreatePasswordForm } from "../../Components";
 import { ReactComponent as Logo } from "../../assets/svg/svgg.svg";
 import MoneyBag from "../../assets/image/moneybag.png";
 
@@ -19,7 +19,7 @@ export const SignIn = () => {
 				</div>
 			</div>
 			<div className="bg-white w-full h-full">
-				<SignInForm />
+				{/* <SignInAndCreatePasswordForm /> */}
 			</div>
 		</div>
 	);
