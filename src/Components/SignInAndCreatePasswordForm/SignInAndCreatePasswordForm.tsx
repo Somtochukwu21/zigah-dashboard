@@ -6,7 +6,9 @@ export const SignInAndCreatePasswordForm = () => {
 	const { showPasswordCreation, handleContinueClick } =
 		useShowPasswordCreation();
 	return (
-		<div>
+		<div className='mt-8'>
+		
+		
 			{showPasswordCreation ? (
 				<CreatePassword />
 			) : (

@@ -38,7 +38,7 @@ export const LoginForm = () => {
 					<input
 						type="password"
 						id="password"
-						className={`border outline-none p-4 rounded  capitalize ${
+						className={`border outline-none p-4 rounded ${
 							errors.password && "border-red-400"
 						}`}
 						{...register("password", {

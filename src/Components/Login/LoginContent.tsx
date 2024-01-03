@@ -4,7 +4,7 @@ import { LoginForm } from "./LoginForm";
 
 export const LoginContent = () => {
 	return (
-		<div className="w-full lg:w-1/2">
+		<div className="w-full lg:w-1/2 mt-8">
 			<FormTextHeader
 				header="Jump right back in"
 				paragraph="Sign in to continue"

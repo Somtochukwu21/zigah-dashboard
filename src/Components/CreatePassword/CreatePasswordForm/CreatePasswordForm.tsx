@@ -16,7 +16,7 @@ export const CreatePasswordForm = () => {
 					<input
 						type="password"
 						id="password"
-						className={`border outline-none p-4 rounded  capitalize ${
+						className={`border outline-none p-4 rounded ${
 							errors.password && "border-red-400"
 						}`}
 						{...register("password", {
@@ -45,7 +45,7 @@ export const CreatePasswordForm = () => {
 								value === watch("password") || "Passwords do not match",
 						})}
 						id="confirmPassword"
-						className={`border outline-none p-4 rounded capitalize ${
+						className={`border outline-none p-4 rounded ${
 							errors.confirmPassword && "border-red-400"
 						}`}
 					/>
