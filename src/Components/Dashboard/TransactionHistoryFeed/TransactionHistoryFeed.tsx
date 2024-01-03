@@ -1,5 +1,5 @@
 import React from "react";
-import { SearchBar } from "../../Global";
+import { SearchBar } from "../../../Global";
 import { TransactionData } from "../TransactionsData";
 import { ActiveAndData } from "../../../interface";
 import { useSearchInput } from "../../../Hooks";

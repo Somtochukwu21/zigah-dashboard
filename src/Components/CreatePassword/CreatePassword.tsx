@@ -1,4 +1,4 @@
-import { FormTextHeader } from "../Global";
+import { FormTextHeader } from "../../Global";
 import { CreatePasswordForm } from "./CreatePasswordForm";
 
 export const CreatePassword = () => {

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { TransactionsProps } from "../../../../interface";
-import { Button, TransactionSkeleton } from "../../../Global";
+import { Button, TransactionSkeleton } from "../../../../Global";
 
 export const FilteredTransactions = ({
 	isAllDataShown,

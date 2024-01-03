@@ -1,5 +1,5 @@
 import { TabProps } from "../../../interface";
-import { Button } from "../../Global";
+import { Button } from "../../../Global";
 
 export const TabButtons: React.FC<TabProps> = ({
 	label,

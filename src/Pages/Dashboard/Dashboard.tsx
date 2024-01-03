@@ -1,5 +1,7 @@
 import React from "react";
-import { Card, DashboardContent, Layout } from "../../Components";
+import { DashboardContent } from "../../Components";
+import { Layout } from "../../Layout";
+import { Card } from "../../Global";
 
 export const Dashboard = () => {
 	return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Global";
+import { Button } from "../../Global";
 import { useForm } from "../../Hooks";
 import { FormProps } from "../../interface";
 
@@ -8,10 +8,15 @@ export const SignInForm = ({ onSubmit }: FormProps) => {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit(onSubmit)} noValidate className='text-sm lg:text-base'>
+			<form
+				onSubmit={handleSubmit(onSubmit)}
+				noValidate
+				className="text-sm lg:text-base">
 				<div className="lg:flex [&>*]:flex [&>*]:flex-col lg:space-x-8">
 					<div>
-						<label className='text-sm lg:text-base' htmlFor="firstName">first name</label>
+						<label className="text-sm lg:text-base" htmlFor="firstName">
+							first name
+						</label>
 						<input
 							type="text"
 							id="firstName"
@@ -22,8 +27,10 @@ export const SignInForm = ({ onSubmit }: FormProps) => {
 						/>
 						<p className="text-red-400">{errors.firstName?.message}</p>
 					</div>
-					<div className='mt-4 lg:mt-0'>
-						<label className='text-sm lg:text-base' htmlFor="lastName">last name</label>
+					<div className="mt-4 lg:mt-0">
+						<label className="text-sm lg:text-base" htmlFor="lastName">
+							last name
+						</label>
 						<input
 							type="text"
 							{...register("lastName", { required: "Last name is required" })}
@@ -37,7 +44,9 @@ export const SignInForm = ({ onSubmit }: FormProps) => {
 				</div>
 
 				<div className="flex flex-col mt-4">
-					<label className='text-sm lg:text-base' htmlFor="phoneNumber">phone number</label>
+					<label className="text-sm lg:text-base" htmlFor="phoneNumber">
+						phone number
+					</label>
 					<div className="flex">
 						<div className="w-20 text-center bg-zinc-100 rounded-tl rounded-bl p-4 ">
 							+234
@@ -65,7 +74,9 @@ export const SignInForm = ({ onSubmit }: FormProps) => {
 				</div>
 
 				<div className="flex flex-col mt-4">
-					<label className='text-sm lg:text-base' htmlFor="email">email</label>
+					<label className="text-sm lg:text-base" htmlFor="email">
+						email
+					</label>
 					<input
 						type="email"
 						{...register("email", {
@@ -95,7 +106,7 @@ export const SignInForm = ({ onSubmit }: FormProps) => {
 								className="w-full h-full"
 							/>
 						</div>
-						<label  htmlFor="accept" className="text-xs lg:text-sm self-center">
+						<label htmlFor="accept" className="text-xs lg:text-sm self-center">
 							By ticking this checkbox, you agree to being added to our mailing
 							list
 						</label>
@@ -112,7 +123,6 @@ export const SignInForm = ({ onSubmit }: FormProps) => {
 						disabled={!isValid}
 					/>
 				</div>
-			
 			</form>
 		</div>
 	);

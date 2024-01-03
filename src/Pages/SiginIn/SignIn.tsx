@@ -1,6 +1,7 @@
 import React from "react";
-import { SignInAndCreatePasswordForm, SigningUpLayout } from "../../Components";
-
+import { SignInAndCreatePasswordForm,  } from "../../Components";
+import {SigningUpLayout}from
+'../../Layout'
 export const SignIn = () => {
 	return (
 		<SigningUpLayout>

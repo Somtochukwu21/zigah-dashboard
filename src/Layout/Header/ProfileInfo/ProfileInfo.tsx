@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as Notification } from "../../../../assets/svg/bell.svg";
-import { ReactComponent as Avatar } from "../../../../assets/svg/avatar.svg";
+import { ReactComponent as Notification } from "../../../assets/svg/bell.svg";
+import { ReactComponent as Avatar } from "../../../assets/svg/avatar.svg";
 export const ProfileInfo = () => {
 	return (
 		<div>

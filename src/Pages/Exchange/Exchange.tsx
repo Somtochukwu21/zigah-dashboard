@@ -1,5 +1,6 @@
 import React from "react";
-import { Layout ,Card} from "../../Components";
+import { Card} from "../../Global";
+import { Layout } from "../../Layout";
 
 export const Exchange = () => {
 	return (

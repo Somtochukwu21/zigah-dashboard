@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, TransactionSkeleton } from "../../../Global";
+import { Button, TransactionSkeleton } from "../../../../Global";
 import { TransactionsProps } from "../../../../interface";
 
 export const AllTransactions = ({

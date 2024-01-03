@@ -1,5 +1,5 @@
 import React from "react";
-import { FormTextHeaderProps } from "../../../interface";
+import { FormTextHeaderProps } from "../../interface";
 
 export const FormTextHeader = ({ paragraph, header }: FormTextHeaderProps) => {
 	return (

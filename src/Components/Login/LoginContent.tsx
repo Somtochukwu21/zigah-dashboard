@@ -1,4 +1,4 @@
-import { FormTextHeader } from "../Global";
+import { FormTextHeader } from "../../Global";
 import { Link } from "react-router-dom";
 import { LoginForm } from "./LoginForm";
 

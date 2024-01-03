@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { SignInForm } from "./SignInForm";
-import { FormTextHeader } from "../Global";
+import { FormTextHeader } from "../../Global";
 import { FormProps } from "../../interface";
 
 export const SignIn = ({ onSubmit }: FormProps) => {

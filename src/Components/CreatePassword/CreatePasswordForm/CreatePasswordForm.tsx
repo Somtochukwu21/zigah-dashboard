@@ -1,5 +1,5 @@
 import { useForm } from "../../../Hooks";
-import { Button } from "../../Global";
+import { Button } from "../../../Global";
 
 export const CreatePasswordForm = () => {
 	const { errors, handleSubmit, isValid, onSubmit, register, watch } =

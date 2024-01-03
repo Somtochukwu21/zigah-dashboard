@@ -1,4 +1,5 @@
-import { LoginContent, SigningUpLayout } from "../../Components";
+import { LoginContent } from "../../Components";
+import { SigningUpLayout } from "../../Layout";
 
 export const Login = () => {
 	return (

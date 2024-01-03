@@ -1,5 +1,5 @@
-import { ReactComponent as Logo } from "../../../assets/svg/svgg.svg";
-import MoneyBag from "../../../assets/image/moneybag.png";
+import { ReactComponent as Logo } from "../../assets/svg/svgg.svg";
+import MoneyBag from "../../assets/image/moneybag.png";
 import { CardProp } from "../../../interface";
 
 export const SigningUpLayout = ({ children }: CardProp) => {

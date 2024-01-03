@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "../../../Hooks";
-import { Button } from "../../Global";
+import { Button } from "../../../Global";
 
 export const LoginForm = () => {
 	const { errors, handleSubmit, isValid, onSubmit, register } = useForm();
@@ -28,7 +28,7 @@ export const LoginForm = () => {
 				</div>
 
 				<div className="flex flex-col mb-4">
-					<div className='flex justify-between'>
+					<div className="flex justify-between">
 						<label htmlFor="password">Password</label>
 						<p className=" text-secondary text-sm font-semibold">
 							Forgot password?
@@ -70,6 +70,3 @@ export const LoginForm = () => {
 		</form>
 	);
 };
-
-
-

@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as Naira } from "../../../assets/svg/naira.svg";
 import { ReactComponent as Add } from "../../../assets/svg/add.svg";
 import { ReactComponent as Send } from "../../../assets/svg/send.svg";
-import { Button } from "../../Global";
+import { Button } from "../../../Global";
 
 export const WalletOverview = () => {
 	return (
