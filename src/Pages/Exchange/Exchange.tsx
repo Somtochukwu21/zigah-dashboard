@@ -1,11 +1,12 @@
-import React from 'react'
-import { Layout } from '../../Components';
+import React from "react";
+import { Layout ,Card} from "../../Components";
 
 export const Exchange = () => {
-  return (
-    <Layout>
-
-      <div>Exchange</div>
-    </Layout>
-  )
-}
+	return (
+		<Layout>
+			<Card>
+				<div>Exchange</div>
+			</Card>
+		</Layout>
+	);
+};

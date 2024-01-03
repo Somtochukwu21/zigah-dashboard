@@ -1,18 +1,17 @@
 import React from "react";
 import { Button } from "../Global";
 import { useForm } from "../../Hooks";
-import { DevTool } from "@hookform/devtools";
+import { FormProps } from "../../interface";
 
-export const SignInForm = () => {
-	const { handleSubmit, onSubmit, register, control, errors, isValid } =
-		useForm();
+export const SignInForm = ({ onSubmit }: FormProps) => {
+	const { handleSubmit, register, errors, isValid } = useForm();
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit(onSubmit)} noValidate>
-				<div className="flex [&>*]:flex [&>*]:flex-col space-x-8">
+			<form onSubmit={handleSubmit(onSubmit)} noValidate className='text-sm lg:text-base'>
+				<div className="lg:flex [&>*]:flex [&>*]:flex-col lg:space-x-8">
 					<div>
-						<label htmlFor="firstName">first name</label>
+						<label className='text-sm lg:text-base' htmlFor="firstName">first name</label>
 						<input
 							type="text"
 							id="firstName"
@@ -23,8 +22,8 @@ export const SignInForm = () => {
 						/>
 						<p className="text-red-400">{errors.firstName?.message}</p>
 					</div>
-					<div>
-						<label htmlFor="lastName">last name</label>
+					<div className='mt-4 lg:mt-0'>
+						<label className='text-sm lg:text-base' htmlFor="lastName">last name</label>
 						<input
 							type="text"
 							{...register("lastName", { required: "Last name is required" })}
@@ -38,9 +37,9 @@ export const SignInForm = () => {
 				</div>
 
 				<div className="flex flex-col mt-4">
-					<label htmlFor="phoneNumber">phone number</label>
+					<label className='text-sm lg:text-base' htmlFor="phoneNumber">phone number</label>
 					<div className="flex">
-						<div className="w-20 text-center bg-zinc-100 rounded-tl rounded-bl p-4">
+						<div className="w-20 text-center bg-zinc-100 rounded-tl rounded-bl p-4 ">
 							+234
 						</div>
 						<input
@@ -54,7 +53,7 @@ export const SignInForm = () => {
 								},
 								maxLength: {
 									value: 11,
-									message: "Maximum length reached",
+									message: "Maximum length exceeded",
 								},
 							})}
 							className={`outline-none p-4 rounded-r w-full border-l-0 border rounded capitalize ${
@@ -66,7 +65,7 @@ export const SignInForm = () => {
 				</div>
 
 				<div className="flex flex-col mt-4">
-					<label htmlFor="email">email</label>
+					<label className='text-sm lg:text-base' htmlFor="email">email</label>
 					<input
 						type="email"
 						{...register("email", {
@@ -96,7 +95,7 @@ export const SignInForm = () => {
 								className="w-full h-full"
 							/>
 						</div>
-						<label htmlFor="accept" className="text-sm self-center">
+						<label  htmlFor="accept" className="text-xs lg:text-sm self-center">
 							By ticking this checkbox, you agree to being added to our mailing
 							list
 						</label>
@@ -105,24 +104,16 @@ export const SignInForm = () => {
 				</div>
 				<div>
 					<Button
-						className={`bg-gray-400 text-white w-full p-6 ${
-							!isValid ? "disabled" : "bg-secondary"
+						className={`text-white w-full p-6 ${
+							!isValid ? "bg-gray-400" : "bg-secondary"
 						}`}
 						caption="Continue"
 						type="submit"
 						disabled={!isValid}
 					/>
 				</div>
-				<div className="text-center mt-2">
-					<span className="text-primary text-sm font-normal leading-tight">
-						Have an account already?{" "}
-					</span>
-					<span className="text-secondary text-sm font-bold  leading-tight">
-						Log In
-					</span>
-				</div>
+			
 			</form>
-			<DevTool control={control} />
 		</div>
 	);
 };

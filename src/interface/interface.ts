@@ -54,3 +54,12 @@ export interface FormValues {
 	phoneNumber: number;
 	accept: HTMLInputElement;
 }
+
+export interface FormProps {
+	onSubmit: () => void;
+}
+export interface TransactionsProps {
+	shortenData: DummyData[];
+	showMore: () => void;
+	isAllDataShown: boolean;
+}

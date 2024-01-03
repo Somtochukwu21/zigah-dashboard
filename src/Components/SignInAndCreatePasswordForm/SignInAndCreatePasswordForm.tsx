@@ -1,19 +1,17 @@
-import { SignInForm } from "../SignIn";
+import { SignIn } from "../SignIn";
 import { CreatePassword } from "../CreatePassword";
+import { useShowPasswordCreation } from "../../Hooks";
 
-export const SignInAndCreatePasswordForm = () => (
-	<div className=" w-full h-full flex items-center justify-center max-w-5xl m-auto">
+export const SignInAndCreatePasswordForm = () => {
+	const { showPasswordCreation, handleContinueClick } =
+		useShowPasswordCreation();
+	return (
 		<div>
-
-			<>
-				<div>
-					{/* {showPasswordCreation ? ( */}
-					<CreatePassword />
-					{/* ) : ( */}
-					<SignInForm />
-					{/* )} */}
-				</div>
-			</>
+			{showPasswordCreation ? (
+				<CreatePassword />
+			) : (
+				<SignIn onSubmit={handleContinueClick} />
+			)}
 		</div>
-	</div>
-);
+	);
+};

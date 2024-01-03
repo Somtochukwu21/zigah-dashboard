@@ -1,10 +1,12 @@
 import React from "react";
-import { Layout } from "../../Components";
+import { Layout, Card } from "../../Components";
 
 export const Wallet = () => {
 	return (
 		<Layout>
-			<div>Wallet</div>
+			<Card>
+				<div>Wallet</div>
+			</Card>
 		</Layout>
 	);
 };

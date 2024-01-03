@@ -1,12 +1,16 @@
 import React, { Fragment } from "react";
-import { ActiveAndData } from "../../../../interface";
-import { AllTransactions } from "../AllTransactions/AllTransactions";
+import { TransactionsProps } from "../../../../interface";
+import { Button, TransactionSkeleton } from "../../../Global";
 
-export const FilteredTransactions = ({ data, activeTab }: ActiveAndData) => {
+export const FilteredTransactions = ({
+	isAllDataShown,
+	showMore,
+	shortenData,
+}: TransactionsProps) => {
 	return (
 		<Fragment>
-			{data.map((data, index) => (
-				<AllTransactions
+			{shortenData.map((data, index) => (
+				<TransactionSkeleton
 					key={index}
 					amount={data.amount}
 					image={data.image}
@@ -15,6 +19,16 @@ export const FilteredTransactions = ({ data, activeTab }: ActiveAndData) => {
 					time={data.time}
 				/>
 			))}
+			<div className="flex justify-center py-8">
+				<Button
+					caption="More transactions"
+					className={`bg-primary text-secondary shadow ${
+						isAllDataShown && "hidden"
+					}
+					`}
+					onClick={showMore}
+				/>
+			</div>
 		</Fragment>
 	);
 };

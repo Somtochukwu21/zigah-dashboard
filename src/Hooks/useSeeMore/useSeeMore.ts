@@ -27,5 +27,15 @@ export const useSeeMore = (data: DummyData[], activeTab: string) => {
 		.slice(0, numberOfFilteredItemsShown)
 		.map((user) => user);
 
-	return { shortenData, showMore, shortenFilteredData };
+	const isAllDataShown = data.length === shortenData.length;
+	const isAllShortenedFilteredDataShown =
+		filteredData.length === shortenFilteredData.length;
+	console.log(filteredData.length, shortenFilteredData.length);
+	return {
+		shortenData,
+		showMore,
+		shortenFilteredData,
+		isAllShortenedFilteredDataShown,
+		isAllDataShown,
+	};
 };

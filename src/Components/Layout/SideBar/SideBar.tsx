@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { menuLinks } from "../../menuLinks";
+import { menuLinks } from "../menuLinks";
 
 export const SideBar = () => {
 	return (
