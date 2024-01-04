@@ -65,7 +65,7 @@ export const SignInForm = ({ onSubmit }: FormProps) => {
 									message: "Maximum length exceeded",
 								},
 							})}
-							className={`outline-none p-4 rounded-r w-full border-l-0 border rounded capitalize ${
+							className={`outline-none p-4 rounded-r w-full border-l-0 border capitalize ${
 								errors.lastName && "border-red-400"
 							}`}
 						/>
