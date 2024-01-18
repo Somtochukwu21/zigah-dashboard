@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Notification } from "../../../assets/svg/bell.svg";
-import { ReactComponent as Avatar } from "../../../assets/svg/avatar.svg";
+import avatar from "../../../assets/image/avatar.png";
 export const ProfileInfo = () => {
 	return (
 		<div>
@@ -13,7 +13,7 @@ export const ProfileInfo = () => {
 						Cody Simmons
 					</div>
 					<div className="">
-						<Avatar />
+						<img src={avatar} alt="avatar" className="h-8 w-8" />
 					</div>
 				</div>
 			</div>
