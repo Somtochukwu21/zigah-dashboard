@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Notification } from "../../../assets/svg/bell.svg";
+import Notification from "../../../assets/svg/bell.svg?react";
 import avatar from "../../../assets/image/avatar.png";
 export const ProfileInfo = () => {
 	return (

@@ -1,6 +1,6 @@
 import { LoginContent } from "../../Components";
 import { SigningUpLayout } from "../../Layout";
-import { ReactComponent as Logo } from "../../assets/svg/svgg.svg";
+import Logo from "../../assets/svg/logo.svg?react";
 
 export const Login = () => {
 	return (

@@ -1,8 +1,7 @@
 import React from "react";
-import { ReactComponent as Logo } from "../../assets/svg/svgg.svg";
-import { SignInAndCreatePasswordForm,  } from "../../Components";
-import {SigningUpLayout}from
-	'../../Layout'
+import Logo from "../../assets/svg/logo.svg";
+import { SignInAndCreatePasswordForm } from "../../Components";
+import { SigningUpLayout } from "../../Layout";
 
 export const SignIn = () => {
 	return (

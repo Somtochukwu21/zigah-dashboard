@@ -1,5 +1,5 @@
 import { MdClose } from "react-icons/md";
-import { ReactComponent as MenuIcon } from "../../../assets/svg/menu.svg";
+import  MenuIcon  from "../../../assets/svg/menu.svg?react";
 import { Link } from "react-router-dom";
 import { useToggleSideNav } from "../../../Hooks";
 import { menuLinks } from "../../menuLinks";

@@ -1,7 +1,7 @@
 import React from "react";
-import { ReactComponent as Naira } from "../../../assets/svg/naira.svg";
-import { ReactComponent as Add } from "../../../assets/svg/add.svg";
-import { ReactComponent as Send } from "../../../assets/svg/send.svg";
+import Naira from "../../../assets/svg/naira.svg?react";
+import Add from "../../../assets/svg/add.svg?react";
+import Send from "../../../assets/svg/send.svg?react";
 import { Button } from "../../../Global";
 
 export const WalletOverview = () => {
@@ -18,8 +18,16 @@ export const WalletOverview = () => {
 				</div>
 			</div>
 			<div className="flex space-x-2">
-				<Button caption="fund account" element={<Add />} className="bg-secondary"/>
-				<Button caption="send money" element={<Send />}  className="bg-secondary"/>
+				<Button
+					caption="fund account"
+					element={<Add />}
+					className="bg-secondary"
+				/>
+				<Button
+					caption="send money"
+					element={<Send />}
+					className="bg-secondary"
+				/>
 			</div>
 		</div>
 	);

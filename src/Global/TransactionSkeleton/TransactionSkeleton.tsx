@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Ellipse } from "../../assets/svg/ellipse.svg";
+import Ellipse from "../../assets/svg/ellipse.svg?react";
 import { DummyData } from "../../../interface";
 
 export const TransactionSkeleton = ({

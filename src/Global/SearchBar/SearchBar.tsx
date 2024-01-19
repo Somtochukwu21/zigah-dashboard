@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as Search } from "../../assets/svg/search.svg";
-import { ReactComponent as Calender } from "../../assets/svg/calender.svg";
+import Search from "../../assets/svg/search.svg?react";
+import Calender from "../../assets/svg/calender.svg?react";
 import { SearchBarProps } from "../../../interface";
 
 export const SearchBar = ({

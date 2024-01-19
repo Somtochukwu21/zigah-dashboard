@@ -1,5 +1,5 @@
 import { useRoutePathname } from "../../Hooks";
-import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
+import Logo from "../../assets/svg/logo.svg?react";
 import { MobileSideNav } from "./Mobile";
 import { ProfileInfo } from "./ProfileInfo";
 export const Header = () => {

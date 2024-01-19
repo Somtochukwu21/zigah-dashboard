@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from "../../assets/svg/svgg.svg";
+import Logo from "../../assets/svg/logo.svg?react";
 import MoneyBag from "../../assets/image/moneybag.png";
 import { CardProp } from "../../../interface";
 
