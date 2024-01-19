@@ -1,6 +1,5 @@
 import React from "react";
-import { TransactionOverview } from "./TransactionOverview";
-import { WalletOverview } from "./WalletOverview";
+import { TransactionOverview, WalletOverview } from "./_components";
 
 export const DashboardContent = () => {
 	return (

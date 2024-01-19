@@ -30,8 +30,8 @@ export const useSeeMore = (data: DummyData[], activeTab: string) => {
 	const isAllDataShown = data.length === shortenData.length;
 	const isAllShortenedFilteredDataShown =
 		filteredData.length === shortenFilteredData.length;
-	console.log(filteredData.length, shortenFilteredData.length);
-	return {
+
+		return {
 		shortenData,
 		showMore,
 		shortenFilteredData,

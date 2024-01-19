@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "../../Global";
-import { useForm } from "../../Hooks";
-import { FormProps } from "../../interface";
+import { FormProps } from "../../../interface";
+import { useForm } from "../../../Hooks";
+import { Button } from "../../../Global";
 
 export const SignInForm = ({ onSubmit }: FormProps) => {
 	const { handleSubmit, register, errors, isValid } = useForm();

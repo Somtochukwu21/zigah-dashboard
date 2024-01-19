@@ -1,4 +1,4 @@
-import { CardProp } from "../../interface";
+import { CardProp } from "../interface";
 import { Header } from "./Header";
 import { SideBar } from "./SideBar";
 

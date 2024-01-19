@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
-import { ActiveAndData } from "../../../interface";
-import { FilteredTransactions } from "./FilteredTransactions";
-import { useSeeMore } from "../../../Hooks";
-import { AllTransactions } from "./AllTransactions";
+import { useSeeMore } from "../../../../Hooks";
+import { ActiveAndData } from "../../../../interface";
+import { AllTransactions, FilteredTransactions } from "./_components";
 
 export const TransactionData = ({ data, activeTab }: ActiveAndData) => {
 	const {

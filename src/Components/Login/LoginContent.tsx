@@ -1,6 +1,6 @@
 import { FormTextHeader } from "../../Global";
 import { Link } from "react-router-dom";
-import { LoginForm } from "./LoginForm";
+import { LoginForm } from "./_components";
 
 export const LoginContent = () => {
 	return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { SearchBar } from "../../../Global";
-import { TransactionData } from "../TransactionsData";
 import { ActiveAndData } from "../../../interface";
 import { useSearchInput } from "../../../Hooks";
+import { TransactionData } from "./TransactionsData";
 
 export const TransactionHistoryFeed = ({ data, activeTab }: ActiveAndData) => {
 	const { searchInput, handleSearchInputChange, filteredData } =

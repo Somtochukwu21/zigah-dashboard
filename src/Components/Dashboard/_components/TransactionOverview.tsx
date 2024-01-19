@@ -1,4 +1,4 @@
-import { TransactionAndTabs } from "../TransactionAndTabs";
+import { TransactionAndTabs } from "./TransactionAndTabs";
 
 export const TransactionOverview: React.FC = () => {
 	const tabs = [

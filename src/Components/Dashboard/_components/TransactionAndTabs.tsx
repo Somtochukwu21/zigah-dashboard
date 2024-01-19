@@ -1,7 +1,7 @@
 import { TabsProps } from "../../../interface";
 import { useState } from "react";
-import { TabButtons } from "../TabButtons";
-import { TransactionHistoryFeed } from "../TransactionHistoryFeed";
+import { TabButtons } from "./TabButtons";
+import { TransactionHistoryFeed } from "./TransactionHistoryFeed";
 import { dummyData } from "../../../API";
 
 export const TransactionAndTabs: React.FC<TabsProps> = ({ tabs }) => {

@@ -1,6 +1,6 @@
 import React from "react";
-import { Layout } from "../../Layout";
 import { Card } from "../../Global";
+import { Layout } from "../../Layout";
 
 export const Wallet = () => {
 	return (

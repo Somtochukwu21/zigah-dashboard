@@ -1,5 +1,5 @@
 import { FormTextHeader } from "../../Global";
-import { CreatePasswordForm } from "./CreatePasswordForm";
+import { CreatePasswordForm } from "./_components";
 
 export const CreatePassword = () => {
 	return (
